@@ -11,7 +11,6 @@ Permite configurar el *quantum*, añadir procesos y visualizar la ejecución pas
 
 * **Round Robin**: Algoritmo de planificación de CPU con *quantum* configurable.
 
-  * Ejecución preemptiva.
   * Cola circular de procesos.
   * Cálculo automático de métricas de rendimiento.
 
@@ -40,14 +39,14 @@ Permite configurar el *quantum*, añadir procesos y visualizar la ejecución pas
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tuusuario/round_robin.git  
+git clone https://github.com/WBOK-GM/OS_Round_Robin.git  
 cd round_robin
 ```
 
 ### 2. Ejecutar la Aplicación
 
 ```bash
-python3 -m round_robin.main
+python3 main.py
 ```
 
 ---
@@ -122,28 +121,3 @@ round_robin/
 * Maneja la lógica entre la vista y el modelo.
 * Controla la simulación y actualización de la interfaz.
 
----
-
-## 🎓 Casos de Uso Educativos
-
-* **Simulación Académica**: Ideal para comprender el funcionamiento del algoritmo Round Robin.
-* **Pruebas de Quantum**: Observar cómo varía el rendimiento según el quantum elegido.
-* **Comparación con Otros Algoritmos**: Puede extenderse para contrastar con **FCFS** o **SJF**.
-
----
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Haz un *fork* del repositorio.
-2. Crea una rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Haz *commit* de tus cambios (`git commit -m "Nueva funcionalidad"`).
-4. Haz *push* a la rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un *Pull Request*.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **MIT**.
