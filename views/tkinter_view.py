@@ -193,13 +193,13 @@ class RRApp(tk.Tk, RRViewInterface):
         # Control de Velocidad
         vf = ttk.Frame(left, style="TFrame")
         vf.pack(fill=tk.X, pady=(5, 5), padx=5)
-        ttk.Label(vf, text="Ticks/Segundo:", style="TLabel").pack(side=tk.LEFT)
+        ttk.Label(vf, text="Speed:", style="TLabel").pack(side=tk.LEFT)
         self.ticks_per_second_spinbox = ttk.Spinbox(
             vf, from_=1, to=1000, textvariable=self.ticks_per_second_var,
             width=6, style="TSpinbox"
         )
         self.ticks_per_second_spinbox.pack(side=tk.LEFT, padx=10)
-        ttk.Button(vf, text="Aplicar Velocidad", command=self.on_set_speed, style="TButton").pack(side=tk.LEFT, padx=5)
+        ttk.Button(vf, text="Set Speed", command=self.on_set_speed, style="TButton").pack(side=tk.LEFT, padx=5)
         # Tabla de Procesos
         table_frame = ttk.LabelFrame(left, text="Procesos", style="TLabelframe")
         table_frame.pack(fill=tk.BOTH, expand=True, pady=10, padx=5)
@@ -244,12 +244,12 @@ class RRApp(tk.Tk, RRViewInterface):
         ttk.Entry(burst_row, textvariable=self.burst_var, width=8, style="TEntry").pack(side=tk.LEFT)
         btn_row = ttk.Frame(process_mgmt_frame, style="TFrame")
         btn_row.pack(fill=tk.X, padx=10, pady=(0, 10))
-        add_btn = ttk.Button(btn_row, text="Añadir", command=self.on_add_process, style="TButton")
+        add_btn = ttk.Button(btn_row, text="Add", command=self.on_add_process, style="TButton")
         add_btn.pack(side=tk.LEFT, padx=(0, 5), fill=tk.X, expand=True)
-        del_btn = ttk.Button(btn_row, text="Eliminar", command=self.on_delete_selected, style="Danger.TButton")
+        del_btn = ttk.Button(btn_row, text="Delete", command=self.on_delete_selected, style="Danger.TButton")
         del_btn.pack(side=tk.LEFT, padx=(5, 0), fill=tk.X, expand=True)
         # Botón de ejemplo
-        load_btn = ttk.Button(left, text="Cargar Procesos de Ejemplo", command=self.on_load_sample, style="TButton")
+        load_btn = ttk.Button(left, text="Load Sample Processes", command=self.on_load_sample, style="TButton")
         load_btn.pack(fill=tk.X, pady=(0, 10), padx=5)
         # --- PANEL DERECHO ---
         right = ttk.Frame(main_frame, style="Panel.TFrame")
